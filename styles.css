@@ -1,0 +1,153 @@
+:root {
+  --bg: #fffaf5;
+  --text: #2a1f1b;
+  --accent: #8a3b12;
+  --accent-dark: #6d2f0e;
+  --card: #ffffff;
+  --muted: #6b5d58;
+  --border: #f0d9cb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+
+.hero {
+  background: linear-gradient(rgba(42, 31, 27, 0.55), rgba(42, 31, 27, 0.6)),
+    url("https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1600&q=80")
+      center / cover;
+  color: white;
+  padding: 1.5rem clamp(1rem, 3vw, 3rem) 5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-content {
+  max-width: 680px;
+  margin-top: 4rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin: 0;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: var(--accent-dark);
+}
+
+.section {
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 3vw, 3rem);
+}
+
+.alt {
+  background: #fff;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.section-copy {
+  color: var(--muted);
+}
+
+.form {
+  max-width: 500px;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.form label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 500;
+}
+
+input,
+select {
+  padding: 0.65rem;
+  border: 1px solid #d7c2b7;
+  border-radius: 8px;
+  font: inherit;
+}
+
+#form-message {
+  min-height: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 1.2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+footer a {
+  color: var(--accent);
+}
